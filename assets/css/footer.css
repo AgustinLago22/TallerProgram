@@ -1,0 +1,46 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centramos horizontalmente los elementos */
+    padding: 1rem;
+    background-color: #8C6E49;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    margin-bottom: 10px;
+}
+
+.footer-terms {
+    text-align: center; /* Centramos horizontalmente el texto */
+}
+.footer-top p{
+    margin-top: 15px;
+    color: #ccbdad;
+}
+.footer-terms a {
+    color: #ccbdad;
+    transition: color 0.3s ease; /* Agregamos una transición para el cambio de color */
+}
+
+.footer-terms a:hover {
+    color: #dbd9d8;
+    text-decoration: underline;
+}
+
+.redes i {
+    font-size: 2.5rem; /* Ajustamos el tamaño de fuente de los íconos */
+    color:#ccbdad;
+}

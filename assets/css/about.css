@@ -1,0 +1,62 @@
+.about-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px; /* Espacio interno */
+    background-color: #f8f9fa; /* Color de fondo */
+    border-radius: 0px; /* Bordes redondeados */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),url('../img/fondo_about.png');
+    background-size: cover; /* Ajustar el tamaño de la imagen para cubrir toda la página */
+    background-position: center; /* Centrar la imagen */
+    min-height: 100vh; /* Asegurar que el contenedor tenga al menos la altura de la ventana */
+    padding: 20px; /* Añadir un poco de espacio alrededor del contenido */
+    box-sizing: border-box; /* Incluir el padding en el tamaño total del contenedor */
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del flexbox a columna */
+    margin-bottom: 55px; /* Separación entre cada contenedor */
+    margin: 0 auto 55px; /* Centra horizontalmente los contenedores y agrega margen inferior */
+    max-width: 600px; /* Ancho máximo de los contenedores */
+    background-color: #fff; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    border: 3px solid #ccbdad;
+    opacity: 0.9; /* Cambia la opacidad a 90% */
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: all 0.3s ease;
+}
+
+.about-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-icon {
+    flex: 0 0 auto; /* El icono no cambia de tamaño */
+    margin: 20px auto; /* Espacio alrededor del icono y centrado horizontalmente */
+}
+
+.about-icon img {
+    max-width: 40px; /* Ancho máximo del icono */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.about-content {
+    flex: 1; /* El contenido ocupa el espacio restante */
+    padding: 20px; /* Espacio interno */
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.about-content h2 {
+    margin-bottom: 10px;
+    color: #333; /* Color del título */
+}
+
+.about-content p {
+    margin: 0; /* Elimina los márgenes del párrafo */
+    color: #666; /* Color del texto */
+}
+
+#container4 {
+    margin-bottom: 0; /* Elimina el margen inferior del último contenedor */
+}

@@ -1,0 +1,82 @@
+    
+.coffee-product-add-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.coffee-product-add-title {
+    text-align: center;
+    font-size: 24px;
+    color: #4b3832;
+    margin-bottom: 20px;
+}
+
+.coffee-product-add-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.coffee-form-group {
+    margin-bottom: 15px;
+}
+
+.coffee-form-group label {
+    display: block;
+    font-weight: bold;
+    color: #4b3832;
+    margin-bottom: 5px;
+}
+
+.coffee-form-group input,
+.coffee-form-group textarea,
+.coffee-form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.coffee-form-group input[type="file"] {
+    padding: 3px;
+}
+
+.coffee-submit-button {
+    padding: 12px 20px;
+    background-color: #6f4e37;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.coffee-submit-button:hover {
+    background-color: #56392d;
+    transform: scale(1.05);
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}

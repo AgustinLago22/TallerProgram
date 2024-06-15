@@ -1,0 +1,103 @@
+.comprobante-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.comprobante-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comprobante-title {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.comprobante-subtitle {
+    font-size: 22px;
+    color: #666;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.comprobante-user-info,
+.comprobante-shipping-info {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.comprobante-info {
+    margin: 5px 0;
+}
+
+.comprobante-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.comprobante-th{
+    border: 1px solid #bd8642;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    
+}
+.comprobante-td {
+    border: 1px solid #bd8642;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.comprobante-th {
+    background-color: #bd8642;
+    font-weight: bold;
+}
+
+.comprobante-total-container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.comprobante-total {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.comprobante-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #bd8642;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comprobante-button:hover {
+    background-color: #0056b3;
+}
+
+.comprobante-button-hidden {
+    display: none;
+}

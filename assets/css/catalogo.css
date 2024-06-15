@@ -1,0 +1,101 @@
+.catalog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+    background-image: url('../img/fondo_catalogo.png');
+    background-size: cover; /* Cubre todo el contenedor con la imagen */
+    background-position: center; /* Centra la imagen horizontal y verticalmente */
+    height: 120vh; /* Establece la altura al 100% de la altura de la ventana */
+    margin: 0; /* Agregado para eliminar cualquier margen predeterminado */
+}
+
+.catalog-section {
+    height: 25rem; /* Aumentamos la altura de las secciones */
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    gap: 3rem; /* Aumentamos el espacio entre las secciones */
+    margin-bottom: 3rem; /* Ajustamos el margen inferior para separar las secciones */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Agregamos sombra a las cajas */
+    transition: transform 0.3s ease; /* Agregamos una transición suave al efecto */
+}
+
+.catalog-section:hover {
+    transform: translateY(-5px); /* Al pasar el mouse, levantamos la caja */
+}
+.product-box {
+    text-align: center;
+}
+
+.product-name {
+    margin-bottom: 15px; /* Aumentamos el margen inferior del nombre del producto */
+}
+
+
+.product-box h3{
+    font-size: 2.5rem;
+    font-weight:350;
+    color: #fff;
+    text-transform: capitalize;
+    position:relative;
+}
+
+.product-box h3::after{
+    content: '';
+    width:2.5rem;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom:-0.5rem;
+    left:50%;
+    transform:translate(-50%,50%);
+
+}
+
+.product-box p{
+    font-size: 1.6rem;
+    font-weight: 350;
+    color:#fff;
+    cursor:pointer;
+    transition: color 0.3s ease;
+}
+.product-box a{
+    color:#fff;
+    transition: color 0.3s ease; 
+}
+.product-box a:hover{
+    color:#cd6b08;
+}
+
+/* Estilos específicos para cada categoría */
+.catalog-section.cafe {
+    margin-top: 1.9%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('../img/granoscafe.png');
+    background-size: cover;
+    background-position: center 60%;
+    background-repeat: no-repeat;
+}
+
+.catalog-section.cafeteras {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('../img/moka_aesthetic.png');
+    background-size: cover;
+    background-position: center 60%;
+    background-repeat: no-repeat;
+}
+
+.catalog-section.tazas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('../img/taza_porcelana.png');
+    background-size: cover;
+    background-position: center 60%;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 820px) {
+    .catalog-section {
+        width: 50%; /* Cambié el ancho a 45% para dispositivos medianos y grandes */
+    }
+}

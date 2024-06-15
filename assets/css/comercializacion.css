@@ -1,0 +1,56 @@
+.comercializacion {
+    margin-top: 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('../img/fondo_comercializacion.png');
+    background-size: cover; /* Ajustar el tamaño de la imagen para cubrir toda la página */
+    background-position: center; /* Centrar la imagen */
+    min-height: 120vh; /* Asegurar que el contenedor tenga al menos la altura de la ventana */
+    padding: 10px; /* Añadir un poco de espacio alrededor del contenido */
+    box-sizing: border-box; /* Incluir el padding en el tamaño total del contenedor */
+}
+
+.box {
+    margin: 0 auto 30px;
+    margin-top:80px;
+    margin-bottom: 30px; /* Espacio entre las cajas */
+    width: 80%; /* Ancho de las cajas */
+    padding: 20px;
+    border: 2px solid #ccbdad; /* Añade un borde de 2px de grosor y color gris */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+    transition: all 0.3s ease;
+    opacity: 0.96;
+}
+
+.box a{
+    color:#8a7258;
+    text-decoration: underline;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.box p{
+    color:#94816c
+}
+
+.box h3 {
+    color: #795548;
+    margin-top: 0; /* Elimina el margen superior del título */
+}
+
+.box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.box ul li {
+    margin: 10px 0;
+}
+
+.payment-methods p img {
+    width: 40px; /* Ajusta el ancho según sea necesario */
+    margin-right: 10px; /* Espacio entre los logotipos */
+}

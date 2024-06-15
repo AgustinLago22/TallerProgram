@@ -1,0 +1,78 @@
+
+
+.fondo-gestores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.coffee-usuario-edit-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.coffee-usuario-edit-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #6b4e31;
+}
+
+.coffee-usuario-edit-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.coffee-user-form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+}
+
+.coffee-user-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #6b4e31;
+}
+
+.coffee-user-form-group input,
+.coffee-user-form-group textarea,
+.coffee-user-form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.coffee-user-form-group input:focus,
+.coffee-user-form-group textarea:focus,
+.coffee-user-form-group select:focus {
+    border-color: #6b4e31;
+    outline: none;
+}
+
+.coffee-submit-button {
+    background-color: #6b4e31;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.coffee-submit-button:hover {
+    background-color: #8b6a4d;
+}

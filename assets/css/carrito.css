@@ -1,0 +1,93 @@
+/* Estilos generales */
+.cart-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #f8f1e5; /* Fondo beige claro */
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-details {
+    display: flex;
+    align-items: center;
+}
+
+.product-image {
+    width: 50px; /* Tamaño más pequeño para la imagen */
+    height: auto;
+    margin-right: 10px;
+}
+
+.product-info h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.product-info p {
+    margin: 5px 0 0 0;
+}
+
+.cart-actions {
+    text-align: center;
+}
+
+.proceed-to-checkout {
+    background-color: #4e342e; /* Marrón oscuro */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.proceed-to-checkout:hover {
+    background-color: #3e2723; /* Marrón más oscuro al pasar el ratón */
+}
+
+/* Estilos para el formulario de actualización y botón de eliminación */
+.item-form {
+    display: inline-block;
+}
+
+.item-form input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.btn-accion {
+    background-color: #4e342e;
+    color: white;
+    border: none;
+    padding: 3px 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-accion:hover {
+    background-color: #3e2723;
+}
+
+/* Estilo para el total */
+.total-amount {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}

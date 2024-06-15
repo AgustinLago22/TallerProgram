@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+/*Raiz que representa al elemento*/
+:root{
+    --primary--color: #c7a17a;
+    --background--color: #bd8642;
+    --dark-color: #151515;
+
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins';/*Si poppins falla, usa sans-serif*/
+}
+/*Universal*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Utilidades*/
+
+/*Centra el contenido*/
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+    
+}
+
+/*HEADER*/
+
+.container-hero{
+    background-color: var(--background--color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.customer-support{
+    display:flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 10px;
+}
+
+.customer-support i{
+    font-size: 3.3rem;
+}
+
+.content-customer-support{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+}
+
+.container-logo{
+    display: flex;
+    align-items: center;
+}
+.container-logo i{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    font-size: 20px;
+    display: flex;
+}
+.container-logo h1{
+    text-decoration: none;
+    color: rgb(24, 31, 43);
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    display: flex;
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+.container-user{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    margin: 10px;
+}
+header .fa-user {
+    font-size: 30px;
+    color: var(--primary--color);
+    padding-right: 2.5rem;
+    border-right:1px solid #e2e2e2;
+}
+
+.container-user .fa-cart-shopping{
+    font-size: 3rem;
+    color: var(--primary--color);
+    padding-left: 1rem;
+}
+
+.content-cart-shopping{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+}
+.menu li{
+    list-style: none;
+    display: inline;
+    margin: 10px;
+}
+
+
+/**/

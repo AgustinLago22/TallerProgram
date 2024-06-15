@@ -1,0 +1,171 @@
+/* Contenedor principal */
+.coffee-product-edit-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #edcf9c;
+    opacity: 0.90;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.coffee-product-edit-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Formulario */
+.coffee-product-edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Grupo de formulario */
+.coffee-product-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Etiquetas */
+.coffee-product-form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Campos de entrada de texto */
+.coffee-product-form-group input[type="text"],
+.coffee-product-form-group input[type="number"],
+.coffee-product-form-group input[type="file"],
+.coffee-product-form-group textarea,
+.coffee-product-form-group select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+/* Campos de entrada: enfoque */
+.coffee-product-form-group input[type="text"]:focus,
+.coffee-product-form-group input[type="number"]:focus,
+.coffee-product-form-group input[type="file"]:focus,
+.coffee-product-form-group textarea:focus,
+.coffee-product-form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Botón de envío */
+.coffee-submit-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Botón de envío: enfoque y hover */
+.coffee-submit-button:focus,
+.coffee-submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Espaciado inferior en la última etiqueta para evitar solapamientos */
+.coffee-product-form-group:last-child {
+    margin-bottom: 0;
+}
+
+/* Media Queries para hacer el diseño responsive */
+@media (max-width: 768px) {
+    .coffee-product-edit-container {
+        padding: 15px;
+    }
+    
+    .coffee-product-edit-title {
+        font-size: 22px;
+    }
+    
+    .coffee-product-form-group label {
+        font-size: 14px;
+    }
+    
+    .coffee-product-form-group input[type="text"],
+    .coffee-product-form-group input[type="number"],
+    .coffee-product-form-group input[type="file"],
+    .coffee-product-form-group textarea,
+    .coffee-product-form-group select {
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    .coffee-submit-button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .coffee-product-edit-container {
+        padding: 10px;
+    }
+    
+    .coffee-product-edit-title {
+        font-size: 20px;
+    }
+    
+    .coffee-product-form-group label {
+        font-size: 12px;
+    }
+    
+    .coffee-product-form-group input[type="text"],
+    .coffee-product-form-group input[type="number"],
+    .coffee-product-form-group input[type="file"],
+    .coffee-product-form-group textarea,
+    .coffee-product-form-group select {
+        font-size: 12px;
+        padding: 6px;
+    }
+    
+    .coffee-submit-button {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 390px) {
+    .coffee-product-edit-container {
+        padding: 5px;
+    }
+    
+    .coffee-product-edit-title {
+        font-size: 18px;
+    }
+    
+    .coffee-product-form-group label {
+        font-size: 10px;
+    }
+    
+    .coffee-product-form-group input[type="text"],
+    .coffee-product-form-group input[type="number"],
+    .coffee-product-form-group input[type="file"],
+    .coffee-product-form-group textarea,
+    .coffee-product-form-group select {
+        font-size: 10px;
+        padding: 5px;
+    }
+    
+    .coffee-submit-button {
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+}

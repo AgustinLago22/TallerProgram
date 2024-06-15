@@ -1,0 +1,464 @@
+INFO - 2024-06-13 14:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:26:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:33:56 --> Cart Class Initialized
+INFO - 2024-06-13 14:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:34:09 --> Cart Class Initialized
+INFO - 2024-06-13 14:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:34:16 --> Cart Class Initialized
+INFO - 2024-06-13 14:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:34:51 --> Cart Class Initialized
+INFO - 2024-06-13 14:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:34:58 --> Cart Class Initialized
+INFO - 2024-06-13 14:35:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:35:22 --> Cart Class Initialized
+INFO - 2024-06-13 14:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:35:24 --> Cart Class Initialized
+ERROR - 2024-06-13 14:35:24 --> mysqli_sql_exception: Column 'userID' cannot be null in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\p_lago_agustin\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(145): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#10 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2024-06-13 14:35:24 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_lago_agustin`.`order_details`, CONSTRAINT `order_details_ibfk_1` FOREIGN KEY (`orderID`) REFERENCES `order` (`id`)) in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\p_lago_agustin\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(157): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#10 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+INFO - 2024-06-13 14:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:35:24 --> Cart Class Initialized
+INFO - 2024-06-13 14:36:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:36:21 --> Cart Class Initialized
+CRITICAL - 2024-06-13 14:36:21 --> Undefined variable $total
+in APPPATH\Views\Products\compra.php on line 27.
+ 1 APPPATH\Views\Products\compra.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total', 'APPPATH\\Views\\Products\\compra.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Products\\compra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Products/compra', [], true)
+ 5 APPPATH\Controllers\Cart.php(104): view('Products/compra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->continuar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 14:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:37:20 --> Cart Class Initialized
+INFO - 2024-06-13 14:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:37:54 --> Cart Class Initialized
+INFO - 2024-06-13 14:39:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:39:18 --> Cart Class Initialized
+INFO - 2024-06-13 14:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:42:26 --> Cart Class Initialized
+INFO - 2024-06-13 14:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:43:06 --> Cart Class Initialized
+INFO - 2024-06-13 14:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:43:43 --> Cart Class Initialized
+INFO - 2024-06-13 14:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:44:01 --> Cart Class Initialized
+INFO - 2024-06-13 14:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:44:28 --> Cart Class Initialized
+INFO - 2024-06-13 14:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:45:33 --> Cart Class Initialized
+INFO - 2024-06-13 14:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:46:14 --> Cart Class Initialized
+INFO - 2024-06-13 14:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:46:24 --> Cart Class Initialized
+INFO - 2024-06-13 14:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:46:39 --> Cart Class Initialized
+INFO - 2024-06-13 14:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:48:07 --> Cart Class Initialized
+INFO - 2024-06-13 14:48:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:48:25 --> Cart Class Initialized
+INFO - 2024-06-13 14:48:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:48:25 --> Cart Class Initialized
+INFO - 2024-06-13 14:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:48:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:48:42 --> Cart Class Initialized
+INFO - 2024-06-13 14:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:48:52 --> Cart Class Initialized
+INFO - 2024-06-13 14:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:49:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:49:14 --> Cart Class Initialized
+INFO - 2024-06-13 14:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:49:17 --> Cart Class Initialized
+INFO - 2024-06-13 14:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:49:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:49:33 --> Cart Class Initialized
+INFO - 2024-06-13 14:50:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:50:05 --> Cart Class Initialized
+INFO - 2024-06-13 17:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:44:25 --> Cart Class Initialized
+INFO - 2024-06-13 17:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:44:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:45:03 --> Cart Class Initialized
+INFO - 2024-06-13 17:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:45:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:45:08 --> Cart Class Initialized
+INFO - 2024-06-13 17:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:45:11 --> Cart Class Initialized
+INFO - 2024-06-13 17:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:45:45 --> Cart Class Initialized
+INFO - 2024-06-13 17:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:45:53 --> Cart Class Initialized
+INFO - 2024-06-13 17:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:46:32 --> Cart Class Initialized
+INFO - 2024-06-13 17:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:46:38 --> Cart Class Initialized
+INFO - 2024-06-13 17:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:47:28 --> Cart Class Initialized
+INFO - 2024-06-13 17:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:47:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:47:53 --> Cart Class Initialized
+INFO - 2024-06-13 17:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:47:56 --> Cart Class Initialized
+INFO - 2024-06-13 17:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:48:34 --> Cart Class Initialized
+INFO - 2024-06-13 17:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:49:09 --> Cart Class Initialized
+INFO - 2024-06-13 17:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:49:41 --> Cart Class Initialized
+INFO - 2024-06-13 17:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:50:29 --> Cart Class Initialized
+INFO - 2024-06-13 17:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:51:06 --> Cart Class Initialized
+INFO - 2024-06-13 17:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:51:20 --> Cart Class Initialized
+INFO - 2024-06-13 17:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:51:42 --> Cart Class Initialized
+INFO - 2024-06-13 17:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:52:04 --> Cart Class Initialized
+INFO - 2024-06-13 17:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:55:33 --> Cart Class Initialized
+INFO - 2024-06-13 17:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:56:42 --> Cart Class Initialized
+INFO - 2024-06-13 17:56:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:56:59 --> Cart Class Initialized
+INFO - 2024-06-13 17:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:58:59 --> Cart Class Initialized
+INFO - 2024-06-13 17:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 17:59:44 --> Cart Class Initialized
+INFO - 2024-06-13 18:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:00:42 --> Cart Class Initialized
+INFO - 2024-06-13 18:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:00:57 --> Cart Class Initialized
+INFO - 2024-06-13 18:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:01:23 --> Cart Class Initialized
+INFO - 2024-06-13 18:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:01:50 --> Cart Class Initialized
+INFO - 2024-06-13 18:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:02:49 --> Cart Class Initialized
+INFO - 2024-06-13 18:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:05:21 --> Cart Class Initialized
+INFO - 2024-06-13 18:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:19:04 --> Cart Class Initialized
+INFO - 2024-06-13 18:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:42:08 --> Cart Class Initialized
+INFO - 2024-06-13 18:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:42:50 --> Cart Class Initialized
+ERROR - 2024-06-13 18:42:50 --> mysqli_sql_exception: Column 'userID' cannot be null in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\p_lago_agustin\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(145): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#10 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2024-06-13 18:42:50 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_lago_agustin`.`order_details`, CONSTRAINT `order_details_ibfk_1` FOREIGN KEY (`orderID`) REFERENCES `order` (`id`)) in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\p_lago_agustin\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(157): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#10 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+INFO - 2024-06-13 18:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:44:14 --> Cart Class Initialized
+INFO - 2024-06-13 18:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:44:20 --> Cart Class Initialized
+INFO - 2024-06-13 18:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:44:25 --> Cart Class Initialized
+INFO - 2024-06-13 18:45:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:45:13 --> Cart Class Initialized
+ERROR - 2024-06-13 18:45:13 --> mysqli_sql_exception: Column 'userID' cannot be null in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\p_lago_agustin\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(145): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#10 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2024-06-13 18:45:13 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_lago_agustin`.`order_details`, CONSTRAINT `order_details_ibfk_1` FOREIGN KEY (`orderID`) REFERENCES `order` (`id`)) in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\p_lago_agustin\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(157): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#10 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+INFO - 2024-06-13 18:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:46:23 --> Cart Class Initialized
+INFO - 2024-06-13 18:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:46:26 --> Cart Class Initialized
+INFO - 2024-06-13 18:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:46:41 --> Cart Class Initialized
+ERROR - 2024-06-13 18:46:41 --> mysqli_sql_exception: Column 'userID' cannot be null in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\p_lago_agustin\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(145): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#10 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2024-06-13 18:46:41 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_lago_agustin`.`order_details`, CONSTRAINT `order_details_ibfk_1` FOREIGN KEY (`orderID`) REFERENCES `order` (`id`)) in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\p_lago_agustin\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(157): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#10 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+INFO - 2024-06-13 18:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:52:09 --> Cart Class Initialized
+INFO - 2024-06-13 18:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:52:13 --> Cart Class Initialized
+INFO - 2024-06-13 18:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:52:30 --> Cart Class Initialized
+ERROR - 2024-06-13 18:52:30 --> mysqli_sql_exception: Column 'userID' cannot be null in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\p_lago_agustin\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(145): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#10 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2024-06-13 18:52:30 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_lago_agustin`.`order_details`, CONSTRAINT `order_details_ibfk_1` FOREIGN KEY (`orderID`) REFERENCES `order` (`id`)) in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\p_lago_agustin\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(157): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#10 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+INFO - 2024-06-13 19:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 19:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 19:01:50 --> Cart Class Initialized
+INFO - 2024-06-13 19:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 19:01:52 --> Cart Class Initialized
+INFO - 2024-06-13 19:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 19:02:06 --> Cart Class Initialized
+ERROR - 2024-06-13 19:02:06 --> mysqli_sql_exception: Column 'userID' cannot be null in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\p_lago_agustin\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(145): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#10 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2024-06-13 19:02:06 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_lago_agustin`.`order_details`, CONSTRAINT `order_details_ibfk_1` FOREIGN KEY (`orderID`) REFERENCES `order` (`id`)) in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\p_lago_agustin\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(157): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#10 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+INFO - 2024-06-13 19:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 19:03:41 --> Cart Class Initialized
+INFO - 2024-06-13 19:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 19:03:46 --> Cart Class Initialized
+INFO - 2024-06-13 19:06:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 19:06:59 --> Cart Class Initialized
+ERROR - 2024-06-13 19:06:59 --> mysqli_sql_exception: Column 'userID' cannot be null in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\p_lago_agustin\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(145): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#10 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2024-06-13 19:06:59 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_lago_agustin`.`order_details`, CONSTRAINT `order_details_ibfk_1` FOREIGN KEY (`orderID`) REFERENCES `order` (`id`)) in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\p_lago_agustin\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(157): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#10 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+INFO - 2024-06-13 19:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 19:07:41 --> Cart Class Initialized
+INFO - 2024-06-13 19:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 19:07:47 --> Cart Class Initialized
+INFO - 2024-06-13 19:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 19:09:16 --> Cart Class Initialized
+INFO - 2024-06-13 19:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 19:09:49 --> Cart Class Initialized
+INFO - 2024-06-13 19:10:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 19:10:12 --> Cart Class Initialized
+ERROR - 2024-06-13 19:10:12 --> mysqli_sql_exception: Column 'userID' cannot be null in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\p_lago_agustin\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(145): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#10 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2024-06-13 19:10:12 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_lago_agustin`.`order_details`, CONSTRAINT `order_details_ibfk_1` FOREIGN KEY (`orderID`) REFERENCES `order` (`id`)) in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\p_lago_agustin\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(157): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#10 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}

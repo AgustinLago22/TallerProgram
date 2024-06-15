@@ -1,0 +1,77 @@
+CRITICAL - 2024-04-03 17:55:06 --> Undefined variable $header
+in APPPATH\Views\Pages\principal.php on line 1.
+ 1 APPPATH\Views\Pages\principal.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $header', 'APPPATH\\Views\\Pages\\principal.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Pages\\principal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Pages/principal', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('Pages/principal')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 17:56:50 --> Undefined variable $header
+in APPPATH\Views\Pages\principal.php on line 1.
+ 1 APPPATH\Views\Pages\principal.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $header', 'APPPATH\\Views\\Pages\\principal.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Pages\\principal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Pages/principal', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('Pages/principal')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 17:57:07 --> Undefined variable $header
+in APPPATH\Views\Pages\principal.php on line 1.
+ 1 APPPATH\Views\Pages\principal.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $header', 'APPPATH\\Views\\Pages\\principal.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Pages\\principal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Pages/principal', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('Pages/principal')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 17:58:33 --> Undefined variable $header
+in APPPATH\Views\Pages\principal.php on line 1.
+ 1 APPPATH\Views\Pages\principal.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $header', 'APPPATH\\Views\\Pages\\principal.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Pages\\principal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Pages/principal', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('Pages/principal')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 17:59:48 --> Undefined variable $header
+in APPPATH\Views\Pages\principal.php on line 1.
+ 1 APPPATH\Views\Pages\principal.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $header', 'APPPATH\\Views\\Pages\\principal.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Pages\\principal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Pages/principal', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('Pages/principal')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 18:08:31 --> Undefined variable $header
+in APPPATH\Views\Pages\principal.php on line 1.
+ 1 APPPATH\Views\Pages\principal.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $header', 'APPPATH\\Views\\Pages\\principal.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Pages\\principal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Pages/principal', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('Pages/principal')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 18:11:18 --> Undefined variable $header
+in APPPATH\Views\Pages\principal.php on line 1.
+ 1 APPPATH\Views\Pages\principal.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $header', 'APPPATH\\Views\\Pages\\principal.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Pages\\principal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Pages/principal', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('Pages/principal')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

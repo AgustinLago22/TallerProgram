@@ -1,0 +1,102 @@
+.nav-container * {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0; /* Agregado para eliminar cualquier margen predeterminado */
+}
+
+.header-nav {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #bd8642;
+    position: relative; 
+    height: 120px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.header-nav ul {
+    display: flex;
+    gap: 3rem;
+}
+
+.header-nav ul li {
+    list-style-type: none;
+}
+
+.header-nav li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #ccbdad;
+    transition: color 0.8s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #723a02;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon i {
+    color: #ffff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .header-nav ul {
+        gap: 1rem; /* Reduce el espacio entre elementos de menú en tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .header-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .logo {
+        margin-left: 10px; /* Ajusta el margen izquierdo del logo para dispositivos móviles */
+    }
+
+    .header-nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        background-color: #bd8642;
+        gap: 0;
+        overflow: hidden;
+        z-index: 1000;
+        transition: all 0.3s ease;
+        padding: 0; /* Ajusta el relleno del ul para dispositivos móviles */
+    }
+
+    .header-nav ul.show {
+        display: flex;
+    }
+
+    .header-nav ul li {
+        padding: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}

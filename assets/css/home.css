@@ -1,0 +1,203 @@
+.banner {
+    /* Ajusta el tamaño y posición de la imagen de fondo */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('../img/fondo2.png'); /* Modificado el valor alfa de los colores para dar transparencia */
+    background-size: cover; /* Cubre todo el contenedor con la imagen */
+    background-position: center; /* Centra la imagen horizontal y verticalmente */
+   
+    height: 90vh; /* Establece la altura al 100% de la altura de la ventana */
+    margin: 0; /* Agregado para eliminar cualquier margen predeterminado */
+    /* Agrega otros estilos de diseño o formato según necesites */
+}
+
+.content-banner{
+    max-width: 95rem;
+    margin: 0 auto;
+    padding: 14.3rem 3rem;
+}
+
+.content-banner p{
+    color:#bd8642;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    margin-left:17px;
+
+}
+
+
+.content-banner h2 {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    
+}
+
+
+.content-banner a{
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #bd8642;
+    display:inline-block;
+    padding:1rem 3rem;
+    text-transform: uppercase;
+    border-radius:3rem;
+    margin-left: 10px;
+}
+
+/* features */
+.container-feature{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:3rem;
+    padding:2rem 0;
+}
+
+.card-feature{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    background-color: #fff;
+    border-radius: 1rem;
+    padding:1.5rem 0;
+}
+
+.card-feature i{
+    font-size:2.7rem;
+    color: #ccbdad;
+}
+
+.feature-content{
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.feature-content span{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #151515;
+}
+
+.feature-content p{
+    color: #777;
+    font-weight: 500;
+}
+
+.categorias{
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    margin-bottom: 3rem;
+}
+.container-categorias{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+
+}
+.encabezado-1{
+    margin-left: 70px;
+}
+.card-category{
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    gap:2rem;
+}
+
+.category-beans{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)) ,url('../img/granoscafe.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.category-cafeteras{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)) ,url('../img/moka_aesthetic.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.category-tazas{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)) ,url('../img/taza_porcelana.png');
+    background-size: cover;
+    background-position: center 60%;
+    background-repeat: no-repeat;
+
+}
+
+.card-category p{
+    font-size: 2.5rem;
+    font-weight:350;
+    color: #fff;
+    text-transform: capitalize;
+    position:relative;
+}
+.card-category p::after{
+    content: '';
+    width:2.5rem;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom:-1rem;
+    left:50%;
+    transform:translate(-50%,50%);
+
+}
+
+.card-category span{
+    font-size: 1.6rem;
+    font-weight: 350;
+    color:#fff;
+    cursor:pointer;
+    transition: color 0.3s ease;
+}
+.card-category a{
+    color:#fff;
+    transition: color 0.3s ease; 
+}
+.card-category a:hover{
+    color:#cd6b08;
+}
+
+
+
+/* Estilos para dispositivos con un ancho de pantalla máximo de 768px (tabletas y dispositivos móviles) */
+@media (max-width: 768px) {
+    .banner {
+        height: auto; /* Ajusta la altura automáticamente según el contenido */
+    }
+
+    .content-banner {
+        padding: 6rem 3rem; /* Ajusta el relleno para dispositivos móviles */
+    }
+
+    .content-banner h2 {
+        margin-left: 10px; /* Ajusta el margen izquierdo para dispositivos móviles */
+        font-size: 2.5rem; /* Ajusta el tamaño de fuente para dispositivos móviles */
+    }
+
+    .content-banner a {
+        padding: 1rem 2rem; /* Ajusta el relleno del botón para dispositivos móviles */
+    }
+
+    .container-feature {
+        grid-template-columns: repeat(1, 1fr); /* Cambia el diseño de las tarjetas a una columna para dispositivos móviles */
+    }
+
+    .categorias {
+        gap: 1rem; /* Reduce el espacio entre las categorías para dispositivos móviles */
+    }
+
+    .container-categorias {
+        grid-template-columns: repeat(1, 1fr); /* Cambia el diseño de las categorías a una columna para dispositivos móviles */
+    }
+}

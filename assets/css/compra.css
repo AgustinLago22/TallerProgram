@@ -1,0 +1,93 @@
+
+.compra-container {
+    max-width: 800px;
+    margin: auto;
+    background: #f1b7609f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.titulo-compra {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a2e06;
+}
+.titulo-compra h3{
+    text-align: center;
+    font-weight: bold;
+    color: #292828;
+}
+.compra-item {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border: 1px solid #f1b7609f;
+    background-color: #ecc987ba;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.compra-item th, .compra-item td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #e7a82196;
+}
+
+.compra-item th {
+    background-color: #ca8910c9;
+    font-weight: bold;
+    color: #292828;
+}
+
+.form-compra {
+    margin-top: 20px;
+}
+
+.form-compra h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.form-compra label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.form-compra input[type="text"], .form-compra input[type="number"], .form-compra select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-compra select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #ffffff;
+    opacity: 0.8;
+}
+
+.form-compra input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-compra input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.total-container {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+}

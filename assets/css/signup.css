@@ -1,0 +1,90 @@
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('../img/fondo_login.png');
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    margin: 0; 
+}
+
+.signup-form {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 0.93;
+    width: 600px;
+}
+
+.signup-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-signup {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-signup label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-signup input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #c2a97d;
+}
+
+.login-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #a07945;
+    text-decoration: none;
+    transition: color 0.3 ease;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+    color: #d37e0f;
+}
+
+.form-signup i {
+    margin-right: 10px;
+    color: #a07945;
+}
+
+.error-form{
+    color: red;
+    font-weight: 200;
+    margin-top: 0.2rem;
+    margin-bottom: 0.3rem;
+}

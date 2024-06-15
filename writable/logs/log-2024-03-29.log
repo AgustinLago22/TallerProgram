@@ -1,0 +1,49 @@
+CRITICAL - 2024-03-29 20:50:44 --> Cannot access offset of type string on string
+in APPPATH\Views\Products\listar.php on line 25.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Products/listar', [], true)
+ 4 APPPATH\Controllers\Product.php(13): view('Products/listar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Product->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 20:51:14 --> Cannot access offset of type string on string
+in APPPATH\Views\Products\listar.php on line 25.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Products/listar', [], true)
+ 4 APPPATH\Controllers\Product.php(13): view('Products/listar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Product->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 20:51:46 --> Cannot access offset of type string on string
+in APPPATH\Views\Products\listar.php on line 25.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Products/listar', [], true)
+ 4 APPPATH\Controllers\Product.php(13): view('Products/listar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Product->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 20:53:22 --> Cannot access offset of type string on string
+in APPPATH\Views\Products\listar.php on line 25.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Products/listar', [], true)
+ 4 APPPATH\Controllers\Product.php(13): view('Products/listar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Product->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 20:56:09 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\Products\listar.php on line 41.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Products/listar', [], true)
+ 3 APPPATH\Controllers\Product.php(13): view('Products/listar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Product->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,221 @@
+/* Estilos generales */
+.fondo-gestores {
+    display: flex;
+    flex-direction: column;
+    padding: 20px; /* Espacio interno */
+    background-color: #f8f9fa; /* Color de fondo */
+    border-radius: 0px; /* Bordes redondeados */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('../img/fondo_about.png');
+    background-size: cover; /* Ajustar el tamaño de la imagen para cubrir toda la página */
+    background-position: center; /* Centrar la imagen */
+    min-height: 100vh; /* Asegurar que el contenedor tenga al menos la altura de la ventana */
+    padding: 20px; /* Añadir un poco de espacio alrededor del contenido */
+    box-sizing: border-box; /* Incluir el padding en el tamaño total del contenedor */
+}
+
+.admin-panel {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-container {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.category-container h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Evita que las celdas se desborden */
+}
+
+.product-table th,
+.product-table td {
+    padding: 12px;
+    border-bottom: 1px solid #edcf9c;
+    text-align: left;
+    word-wrap: break-word; /* Permite el ajuste de palabras largas */
+    overflow-wrap: break-word; /* Maneja el desbordamiento de palabras */
+    white-space: pre-wrap; /* Mantiene los saltos de línea */
+}
+
+.product-table th {
+    background-color: #90774d72;
+    color: #fff;
+}
+
+.product-table td img {
+    max-width: 100px;
+    height: auto;
+    display: block; /* Asegurar que la imagen se renderice como un bloque */
+    margin: 10px 0; /* Espacio alrededor de la imagen */
+}
+
+.product-table td a {
+    text-decoration: none;
+    color: #815304;   
+}
+
+.product-table td a:hover {
+    text-decoration: underline;
+    color: #dc8b00;
+}
+
+/* Estilos para las filas pares */
+.product-table tbody tr:nth-child(even) {
+    background-color: #f8dba87c;
+}
+
+/* Estilos para las filas impares */
+.product-table tbody tr:nth-child(odd) {
+    background-color: #f8dba87c;
+}
+
+/* Estilos para los botones de "Agregar Producto" */
+.add-product-button-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-product-button {
+    padding: 12px 20px;
+    background-color: #c2a97d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.add-product-button:hover {
+    background-color: #f8dba87c;
+    transform: scale(1.05);
+}
+
+.add-product-cafe:hover,
+.add-product-cafeteras:hover,
+.add-product-tazas:hover {
+    background-color: #0056b3;
+}
+
+.mensaje-exito {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+}
+
+.mensaje-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
+
+/* Media Queries para hacer el diseño responsive */
+@media (max-width: 768px) {
+    .admin-panel {
+        padding: 10px;
+    }
+    
+    .category-container {
+        padding: 10px;
+    }
+
+    .product-table th, 
+    .product-table td {
+        padding: 8px;
+    }
+
+    .add-product-button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    .category-container h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-table {
+        border: 0;
+    }
+
+    .product-table thead {
+        display: none;
+    }
+
+    .product-table tbody {
+        display: block;
+    }
+
+    .product-table tbody tr {
+        margin-bottom: 15px; /* Espacio entre "tarjetas" */
+        display: block;
+        border-bottom: 2px solid #ddd;
+        padding: 10px; /* Añadir padding alrededor de cada "tarjeta" */
+        border-radius: 5px; /* Bordes redondeados para las "tarjetas" */
+        background-color: #f9f9f9; /* Fondo para las "tarjetas" */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra para las "tarjetas" */
+    }
+
+    .product-table tbody tr:last-child {
+        margin-bottom: 0; /* Quitar el margen inferior de la última "tarjeta" */
+    }
+
+    .product-table td {
+        display: block;
+        text-align: left; /* Alinear el texto a la izquierda */
+        font-size: 14px; /* Tamaño de fuente más grande */
+        border-bottom: none; /* Quitar el borde inferior */
+        position: relative;
+        padding-left: 0; /* Quitar el padding izquierdo */
+        padding-top: 8px; /* Añadir padding superior */
+        padding-bottom: 8px; /* Añadir padding inferior */
+    }
+
+    .product-table td::before {
+        content: attr(data-label);
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .product-table td img {
+        max-width: 80px;
+        display: block; /* Asegurar que la imagen se renderice como un bloque */
+        margin: 10px auto; /* Centrar la imagen */
+    }
+
+    .add-product-button {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .category-container h2 {
+        font-size: 1rem;
+    }
+}

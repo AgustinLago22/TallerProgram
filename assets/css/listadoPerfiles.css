@@ -1,0 +1,139 @@
+/* Estilo para el contenedor de la tabla */
+.profile-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #a58753;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Estilo para el título del listado de perfiles */
+.profile-list-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #444;
+}
+
+/* Estilo para el contenedor de la tabla */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+/* Estilo para la tabla de perfiles */
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las celdas de la tabla */
+.profile-table th,
+.profile-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Estilo para los encabezados de la tabla */
+.profile-table th {
+    background-color: #edcf9c;
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilo para las filas impares de la tabla */
+.profile-table tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+.profile-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilo para las filas de la tabla al pasar el mouse */
+.profile-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo para los enlaces de edición y eliminación en las celdas de la tabla */
+.profile-edit-link,
+.profile-delete-link {
+    color: #e6a536;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Estilo para los enlaces de edición y eliminación al pasar el mouse */
+.profile-edit-link:hover,
+.profile-delete-link:hover {
+    color: #e6a536;
+    text-decoration: underline;
+}
+
+/* Estilo para los enlaces dentro de la tabla */
+.perfil-label a {
+    color: #dbb36e;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Estilo para la tabla en dispositivos móviles */
+@media screen and (max-width: 768px) {
+    /* Ocultar los encabezados de la tabla en dispositivos móviles */
+    .profile-table thead {
+        display: none;
+    }
+
+    /* Convertir la tabla en una lista en dispositivos móviles */
+    .profile-table,
+    .profile-table tbody,
+    .profile-table tr,
+    .profile-table td {
+        display: block;
+        width: 100%;
+    }
+
+    /* Estilo para cada fila de la lista en dispositivos móviles */
+    .profile-table tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
+        overflow: hidden;
+    }
+
+    /* Estilo para cada celda de la lista en dispositivos móviles */
+    .profile-table td {
+        text-align: left;
+        padding-left: 20px;
+        position: relative;
+    }
+
+    /* Estilo para el texto de la celda en dispositivos móviles */
+    .profile-table td::before {
+        content: attr(perfil-label);
+        position: absolute;
+        left: 10px;
+        width: 150px;
+        padding-right: 10px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    /* Estilo para la variable de la celda en dispositivos móviles */
+    .profile-table td:not([perfil-label="Contraseña"]) {
+        display: inline-block;
+        width: calc(100% - 150px);
+        padding-left: 160px;
+    }
+
+    /* Estilo para las contraseñas en dispositivos móviles */
+    .profile-table td[perfil-label="Contraseña"] {
+        font-size: 12px;
+        width: calc(100% - 150px);
+        padding-left: 160px;
+    }
+}
+
