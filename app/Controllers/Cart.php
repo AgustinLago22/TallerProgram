@@ -62,25 +62,55 @@ class Cart extends BaseController
 
         return redirect()->to(base_url('listado_productos/'. $data['categoriaID']));
     }
+
     public function update()
     {
-        $request = \Config\Services::request();
-        $rowid = $request->getPost('rowid');
-        $qty = $request->getPost('qty');
+        
+    $request = \Config\Services::request();
+    $rowid = $request->getPost('rowid');
+    $qty = $request->getPost('qty');
 
-        // Si la cantidad es menor o igual a 0, eliminamos el producto del carrito
-        if ($qty <= 0) {
-            $this->cart->remove($rowid);
-        } else {
-            $data = array(
-                'rowid'   => $rowid,
-                'qty'     => $qty,
-            );
-            $this->cart->update($data);
+    // Obtener todos los elementos del carrito
+    $cartContents = $this->cart->contents();
+    $cartItem = null;
+
+    // Buscar el elemento específico por rowid
+    foreach ($cartContents as $item) {
+        if ($item['rowid'] === $rowid) {
+            $cartItem = $item;
+            break;
         }
-
-        return redirect()->back()->withInput();
     }
+
+    if ($cartItem === null) {
+        return redirect()->back()->with('errorStock', 'Elemento no encontrado en el carrito.');
+    }
+
+    $productId = $cartItem['id'];
+
+    // Obtener la cantidad disponible del producto
+    $productModel = new Products();
+    $stockDisponible = $productModel->getCantidad($productId);
+
+    // Verificar si la cantidad deseada es mayor que la cantidad disponible
+    if ($qty > $stockDisponible) {
+        return redirect()->back()->with('errorStock', 'Stock insuficiente para el producto: ' . $cartItem['name']);
+    }
+
+    if ($qty <= 0) {
+        $this->cart->remove($rowid);
+    } else {
+        $data = array(
+            'rowid' => $rowid,
+            'qty' => $qty,
+        );
+        $this->cart->update($data);
+    }
+
+    return redirect()->back()->withInput();
+    }
+
+
     public function remove($rowid)
     {
         if ($rowid === "all") {

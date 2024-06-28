@@ -1,5 +1,12 @@
 <div class="fondo-gestores">
     <div class="cart-container">
+        <!-- Mostrar mensajes de error -->
+        <?php if (session()->getFlashdata('errorStock')): ?>
+            <div class="alert alert-danger">
+                <?= session()->getFlashdata('errorStock') ?>
+            </div>
+        <?php endif; ?>
+
         <h2>Carrito de Compras</h2>
         <div class="cart-items">
             <?php if (!empty($productos)): ?>
