@@ -1,19 +1,19 @@
-
-<div class= fondo-gestores>
+<div class="fondo-gestores">
     <div class="coffee-product-add-container">
         <h2 class="coffee-product-add-title">Agregar Producto</h2>
-        <?php if (!empty($error)): ?>
-                <div class="alert alert-danger">
-                    <?= $error ?>
-                </div>
-            <?php endif; ?>
+        <?php if (session()->getFlashdata('error')): ?>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <?= session()->getFlashdata('error') ?>
+            </div>
+        <?php endif; ?>
 
-            <?php if (!empty($mensaje)): ?>
-                <div class="alert alert-success">
-                    <?= $mensaje ?>
-                </div>
-            <?php endif; ?>
-        <form class="coffee-product-add-form" action="<?=base_url('/guardarProducto') ?>" method="post">
+        <?php if (!empty($mensaje)): ?>
+            <div class="alert alert-success">
+                <?= $mensaje ?>
+            </div>
+        <?php endif; ?>
+
+        <form class="coffee-product-add-form" action="<?= base_url('/guardarProducto') ?>" method="post">
             <div class="coffee-form-group">
                 <label for="coffee-product-name">Nombre:</label>
                 <input type="text" name="nombre" id="coffee-product-name" required>
@@ -43,8 +43,8 @@
                 <input type="file" name="img" id="coffee-product-image" accept="image/*">
             </div>
             <div class="coffee-form-group">
-                <label for="coffee-product-category">Categoría:</label>
-                <select name="activado" id="coffee-product-category" required>
+                <label for="coffee-product-activated">Activado:</label>
+                <select name="activado" id="coffee-product-activated" required>
                     <option value="0">Desactivado</option>
                     <option value="1">Activado</option>
                 </select>

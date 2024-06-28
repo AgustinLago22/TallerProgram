@@ -17,14 +17,29 @@ class Consultas extends BaseController
 
     public function guardar_consulta(){
         $consultModel = new Consulta();
+        $validation = \Config\Services::validation();
 
-        // Validar y obtener datos del formulario
         $data = [
             'nombre' => $this->request->getPost('nombre'),
             'mail' => $this->request->getPost('mail'),
-            'mensaje' => $this->request->getPost('mensaje'),
+            'mensaje' => $this->request->getPost('mensaje')
         ];
-
+    
+        // Configurar las reglas de validación
+        $validation->setRules([
+            'nombre' => 'required',
+            'mail' => 'required|valid_email',
+            'mensaje' => 'required'
+        ]);
+    
+        // Validar los datos
+        if (!$validation->withRequest($this->request)->run()) {
+            // Establecer mensaje de error en la sesión con los mensajes de validación
+            session()->setFlashdata('error', $validation->listErrors());
+            return redirect()->to('/contact')->withInput();
+        }
+        
+      
         $consultModel->insert($data);
         return redirect()->to('/contact')->with('mensaje', 'Consulta enviada exitosamente');
     }

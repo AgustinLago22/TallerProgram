@@ -49,6 +49,10 @@ class Logica extends BaseController
     public function guardarProducto() {
         $productModel = new Products();
     
+        $validation = \Config\Services::validation();
+
+
+        
         // Validar y obtener datos del formulario
         $data = [
             'nombre' => $this->request->getPost('nombre'),
@@ -59,6 +63,20 @@ class Logica extends BaseController
             'activado' => $this->request->getPost('activado'),
 
         ];
+        
+        $validation->setRules([
+            'nombre' => 'required|min_length[3]|max_length[255]',
+            'descripcion' => 'required|min_length[10]',
+            'precio' => 'required|greater_than[0]|numeric',
+            'stock' => 'required|greater_than[0]|integer',
+        ]);
+
+        if (!$validation->withRequest($this->request)->run()) {
+            // Establecer mensaje de error en la sesión con los mensajes de validación
+            session()->setFlashdata('error', $validation->listErrors());
+            return redirect()->to('/agregarProducto')->withInput();
+        }
+        
     
         // Verificar si el producto ya existe en la base de datos
         $existingProduct = $productModel->where('nombre', $data['nombre'])->first();
@@ -107,7 +125,9 @@ class Logica extends BaseController
     public function update()
     {
         $productModel = new Products();
-
+        $validation = \Config\Services::validation();
+        $productId = $this->request->getPost('id');
+        
         // Obtener los datos del formulario
         $data = [
             'nombre' => $this->request->getPost('nombre'),
@@ -118,9 +138,21 @@ class Logica extends BaseController
             'activado' => $this->request->getPost('activado'),
             // Otros campos del producto
         ];
+        
+        $validation->setRules([
+            'nombre' => 'required|min_length[3]|max_length[255]',
+            'descripcion' => 'required|min_length[10]',
+            'precio' => 'required|greater_than[0]|numeric',
+            'stock' => 'required|greater_than[0]|integer',
+        ]);
 
-        // Obtener el ID del producto a actualizar
-        $productId = $this->request->getPost('id');
+        if (!$validation->withRequest($this->request)->run()) {
+            // Establecer mensaje de error en la sesión con los mensajes de validación
+            session()->setFlashdata('error', $validation->listErrors());
+            return redirect()->to('editarProducto/'. $productId)->withInput();
+        }
+
+       
         
         $nombreArchivo = $this->request->getPost('img'); // Suponiendo que 'img' es el nombre del campo del formulario que contiene el nombre del archivo
 
@@ -141,6 +173,8 @@ class Logica extends BaseController
             return redirect()->back()->with('errorEditado', 'Hubo un problema al actualizar el producto');
         }
     }
+
+
     public function eliminarProducto($id)
     {
         // Instanciar el modelo de productos

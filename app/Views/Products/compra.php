@@ -28,6 +28,17 @@
 
         <form class="form-compra" action="<?= base_url('/compra/finalizar') ?>" method="post">
             <h3>Datos de Envío y Pago</h3>
+            <?= csrf_field() ?>
+                <?php if (isset($errors)) : ?>
+                    <div class="alert alert-danger">
+                        <ul>
+                            <?php foreach ($errors as $error) : ?>
+                                <li><?= esc($error) ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                <?php endif; ?>   
+
             <label for="direccion">Dirección:</label>
             <input type="text" id="direccion" name="direccion" placeholder="Ingrese su dirección" required>
 
@@ -65,7 +76,7 @@
             </select>
 
             <label for="num_tarjeta">Número de Tarjeta:</label>
-            <input type="text" id="tarjeta" name="tarjeta" placeholder="Ingrese el número de tarjeta" required>
+            <input type="text" id="tarjeta" name="tarjeta" placeholder="Ingrese el número de tarjeta" required maxlength="16">
 
             <div class="total-container">
             <p id="total-pedido">Total: $<?= number_format(array_sum(array_map(function($p) { return $p['price'] * $p['qty']; }, $productos)), 2) ?></p>

@@ -2,6 +2,15 @@
 <main class="formulario-contacto">
     <div class="form-container">
         <h2 class= "titulo-contacto">¡Contáctanos!</h2>
+
+        <?php if (session()->getFlashdata('error')): ?>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <?= session()->getFlashdata('error') ?>
+                
+            </div>
+        <?php endif; ?>
+
+
         <?php if (!empty($error)): ?>
                 <div class="alert alert-danger">
                     <?= $error ?>

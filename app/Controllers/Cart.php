@@ -117,9 +117,64 @@ class Cart extends BaseController
             if (empty($carrito)) {
                 return redirect()->back()->with('mensaje', 'El carrito esta vacio');
             }
+    
+        $validationRules = [
+            'tipoPagoId' => 'required|in_list[1,2]',
+            'tarjeta' => 'required|exact_length[16]|numeric',
+            'direccion' => 'required|trim',
+            'ciudad' => 'required|trim',
+            'provincia'=>'required|trim',
+            'codPostal'=>'required|trim|numeric',
+            'metodoEnvio'=>'required|trim|numeric',
+
+        ];
+        $validationMessages = [
+            'tipoPagoId' => [
+                'required' => 'El tipo de pago es obligatorio.',
+                'in_list' => 'El tipo de pago seleccionado no es válido.'
+            ],
+            'tarjeta' => [
+                'required' => 'El número de tarjeta es obligatorio.',
+                'exact_length' => 'El número de tarjeta debe tener exactamente 16 dígitos.',
+                'numeric' => 'El número de tarjeta debe contener solo números.'
+            ],
+            'direccion' => [
+                'required' => 'La dirección es obligatoria.'
+            ],
+            'ciudad' => [
+                'required' => 'La ciudad es obligatoria.'
+            ],
+            'provincia' => [
+                'required' => 'La provincia es obligatoria.'
+            ],
+            'codPostal' => [
+                'required' => 'El código postal es obligatorio.',
+                'numeric' => 'El código postal debe contener solo números.'
+            ],
+            'metodoEnvio' => [
+                'required' => 'El método de envío es obligatorio.',
+                'in_list' => 'El método de envío seleccionado no es válido.'
+            ],
+            'precioEnvio' => [
+                'required' => 'El costo de envío es obligatorio.',
+                'numeric' => 'El costo de envío debe ser un valor numérico.'
+            ]
+        ];
+    
+        if (!$this->validate($validationRules, $validationMessages)) {
+            $data = [
+                'productos' => $carrito,
+                'cart' => $cart,
+                'errors' => $this->validator->getErrors() // Pasar los errores a la vista
+            ];
+            echo view('components/header');
+            echo view('Products/compra', $data); // Cargar la vista de compra nuevamente
+            echo view('components/footer');
+
+            return;
+        }
 
             $userID= $session->get('userID');
-
             $total_venta = $cart->total();
 
             $tipoPagoId = $this->request->getPost('tipoPagoId');
@@ -143,6 +198,8 @@ class Cart extends BaseController
             if (!empty($datosOrder)) {
                 $Order->insert($datosOrder);
                 $OrderId= $Order->insertID();
+            }else {
+                throw new \Exception('Error al insertar la orden');
             }
 
             $OrderDetail = new OrderDetail();
@@ -154,10 +211,14 @@ class Cart extends BaseController
                     'price' => $producto['price'],
                 ];
                 $OrderDetail->insert($dataOrderDetail);
+
                 $producto_id = $producto['id'];
                 $stockAct = $productModel->getCantidad($producto_id);
 
                 $newStock = $stockAct - $producto['qty'];
+                if ($newStock < 0) {
+                    throw new \Exception('Stock insuficiente para el producto: ' . $producto_id);
+                }
 
                 $productModel->updateCantidad($producto_id, $newStock);
             }

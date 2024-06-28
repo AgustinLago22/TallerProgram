@@ -1,7 +1,8 @@
 <div class="fondo-gestores">
 <div class="profile-list-container">
     <h2 class="profile-list-title">Listado de Perfiles</h2>
-
+        <?php $session= session();
+        $id= $session->get('userID');?>
     <div class="table-wrapper">
         <table class="profile-table">
             <thead>
@@ -20,7 +21,7 @@
             <tbody>
                 <?php if (!empty($users) && is_array($users)): ?>
                     <?php foreach ($users as $user): ?>
-                        <?php if ($user['perfilID'] == 2): ?>
+                        <?php if ($user['perfilID'] == 2 and $user['userID']!= $id): ?>
                             <tr>
                                 <td perfil-label="ID"><?php echo $user['userID']; ?></td>
                                 <td perfil-label="Nombre"><?php echo $user['nombre']; ?></td>
@@ -65,7 +66,7 @@
             <tbody>
                 <?php if (!empty($users) && is_array($users)): ?>
                     <?php foreach ($users as $user): ?>
-                        <?php if ($user['perfilID'] == 1): ?>
+                        <?php if ($user['perfilID'] == 1 and $user['userID']!= $id): ?>
                             <tr>
                                 <td perfil-label="ID"><?php echo $user['userID']; ?></td>
                                 <td perfil-label="Nombre"><?php echo $user['nombre']; ?></td>

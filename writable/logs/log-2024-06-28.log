@@ -1,0 +1,309 @@
+INFO - 2024-06-28 00:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:05:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:05:20 --> Cart Class Initialized
+INFO - 2024-06-28 00:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:05:28 --> Cart Class Initialized
+INFO - 2024-06-28 00:05:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:05:34 --> Cart Class Initialized
+INFO - 2024-06-28 00:05:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:05:53 --> Cart Class Initialized
+CRITICAL - 2024-06-28 00:05:54 --> "equired" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 320.
+ 1 SYSTEMPATH\Validation\Validation.php(320): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('equired')
+ 2 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('tipoPagoId', 'tipoPagoId', '1', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Cart.php(162): CodeIgniter\Controller->validate([...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 00:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:07:45 --> Cart Class Initialized
+INFO - 2024-06-28 00:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:07:47 --> Cart Class Initialized
+INFO - 2024-06-28 00:08:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:08:02 --> Cart Class Initialized
+CRITICAL - 2024-06-28 00:08:03 --> "equired" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 320.
+ 1 SYSTEMPATH\Validation\Validation.php(320): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('equired')
+ 2 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('tipoPagoId', 'tipoPagoId', '1', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Cart.php(162): CodeIgniter\Controller->validate([...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 00:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:10:01 --> Cart Class Initialized
+INFO - 2024-06-28 00:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:10:03 --> Cart Class Initialized
+INFO - 2024-06-28 00:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:10:17 --> Cart Class Initialized
+INFO - 2024-06-28 00:11:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:11:28 --> Cart Class Initialized
+INFO - 2024-06-28 00:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:11:31 --> Cart Class Initialized
+INFO - 2024-06-28 00:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:11:52 --> Cart Class Initialized
+INFO - 2024-06-28 00:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:12:15 --> Cart Class Initialized
+INFO - 2024-06-28 00:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:12:47 --> Cart Class Initialized
+ERROR - 2024-06-28 00:13:54 --> mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\p_lago_agustin\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(199): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#10 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2024-06-28 00:13:54 --> mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\p_lago_agustin\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(213): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#10 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2024-06-28 00:13:54 --> mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '2')
+#6 C:\xampp\htdocs\p_lago_agustin\app\Models\Products.php(15): CodeIgniter\BaseModel->find('2')
+#7 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(216): App\Models\Products->getCantidad('2')
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#10 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-28 00:13:54 --> Call to a member function getFirstRow() on bool
+in SYSTEMPATH\Model.php on line 201.
+ 1 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '2')
+ 2 APPPATH\Models\Products.php(15): CodeIgniter\BaseModel->find('2')
+ 3 APPPATH\Controllers\Cart.php(216): App\Models\Products->getCantidad('2')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 00:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:17:30 --> Cart Class Initialized
+ERROR - 2024-06-28 00:17:34 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'bd_lago_agustin', 3306, '', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '2')
+#6 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(31): CodeIgniter\BaseModel->find('2')
+#7 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->view()
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\p_lago_agustin\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '2')
+#5 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(31): CodeIgniter\BaseModel->find('2')
+#6 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->view()
+#7 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-28 00:17:34 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`
+WHERE `products`.`id` = :products.id:', [...], false)
+ 3 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '2')
+ 5 APPPATH\Controllers\Cart.php(31): CodeIgniter\BaseModel->find('2')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->view()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-28 00:17:41 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'bd_lago_agustin', 3306, '', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\p_lago_agustin\app\Controllers\gestion_catalogo.php(23): CodeIgniter\BaseModel->paginate(3, 'default', 1)
+#7 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\gestion_catalogo->listado_productos('1')
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\gestion_catalogo))
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\xampp\htdocs\p_lago_agustin\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#5 C:\xampp\htdocs\p_lago_agustin\app\Controllers\gestion_catalogo.php(23): CodeIgniter\BaseModel->paginate(3, 'default', 1)
+#6 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\gestion_catalogo->listado_productos('1')
+#7 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\gestion_catalogo))
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-28 00:17:41 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `products`
+WHERE `categoriaID` = :categoriaID:
+AND `activado` = :activado:
+AND `stock` > :stock:', [...], false)
+ 3 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\gestion_catalogo.php(23): CodeIgniter\BaseModel->paginate(3, 'default', 1)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\gestion_catalogo->listado_productos('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\gestion_catalogo))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 00:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:17:45 --> Cart Class Initialized
+ERROR - 2024-06-28 00:17:49 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'bd_lago_agustin', 3306, '', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '2')
+#6 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(31): CodeIgniter\BaseModel->find('2')
+#7 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->view()
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\p_lago_agustin\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '2')
+#5 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(31): CodeIgniter\BaseModel->find('2')
+#6 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->view()
+#7 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-28 00:17:49 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`
+WHERE `products`.`id` = :products.id:', [...], false)
+ 3 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '2')
+ 5 APPPATH\Controllers\Cart.php(31): CodeIgniter\BaseModel->find('2')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->view()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 00:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:18:05 --> Cart Class Initialized
+INFO - 2024-06-28 00:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:18:08 --> Cart Class Initialized
+INFO - 2024-06-28 00:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:18:21 --> Cart Class Initialized
+ERROR - 2024-06-28 00:19:29 --> mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `en...', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `en...')
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `en...')
+#3 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `en...', Array, false)
+#4 C:\xampp\htdocs\p_lago_agustin\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\p_lago_agustin\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\p_lago_agustin\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(237): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+#9 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#10 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-28 00:19:29 --> Error en la transaccion
+in APPPATH\Controllers\Cart.php on line 240.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 00:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:19:29 --> Cart Class Initialized
+ERROR - 2024-06-28 00:19:33 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'bd_lago_agustin', 3306, '', 0)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(800): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(114): CodeIgniter\Database\BaseConnection->transBegin()
+#4 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+#5 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#6 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\p_lago_agustin\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\p_lago_agustin\system\Database\BaseConnection.php(800): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\p_lago_agustin\app\Controllers\Cart.php(114): CodeIgniter\Database\BaseConnection->transBegin()
+#3 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+#4 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#5 C:\xampp\htdocs\p_lago_agustin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\p_lago_agustin\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-28 00:19:33 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(800): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Cart.php(114): CodeIgniter\Database\BaseConnection->transBegin()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->comprar()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 00:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:20:17 --> Cart Class Initialized
+INFO - 2024-06-28 00:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:20:23 --> Cart Class Initialized
+INFO - 2024-06-28 00:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:20:34 --> Cart Class Initialized
+INFO - 2024-06-28 00:20:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 00:20:35 --> Cart Class Initialized

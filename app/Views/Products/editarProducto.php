@@ -1,7 +1,12 @@
 <div class='fondo-gestores'>
     <div class="coffee-product-edit-container">
         <h2 class="coffee-product-edit-title">Editar Producto</h2>
-        <form class="coffee-product-edit-form" action="<?= base_url('/updateProducto') ?>" method="post">
+        <?php if (session()->getFlashdata('error')): ?>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <?= session()->getFlashdata('error') ?>
+            </div>
+        <?php endif; ?>
+        <form class="coffee-product-edit-form" action="<?= base_url('/updateProducto') ?>" method="post" enctype="multipart/form-data">
             <input type="hidden" name="id" value="<?= esc($product['id']); ?>"> <!-- Aquí va el ID del producto a editar -->
             
             <div class="coffee-product-form-group">
@@ -27,9 +32,9 @@
             <div class="coffee-product-form-group">
                 <label for="coffee-product-categoria-label">Categoría:</label>
                 <select name="categoriaID" id="coffee-product-categoria-label" required>
-                    <option value="1" <?= $product['categoriaID'] == 1 ? 'selected' : ''; ?>>Café</option>
-                    <option value="2" <?= $product['categoriaID'] == 2 ? 'selected' : ''; ?>>Cafetera</option>
-                    <option value="3" <?= $product['categoriaID'] == 3 ? 'selected' : ''; ?>>Tazas</option>
+                    <?php foreach ([1 => 'Café', 2 => 'Cafetera', 3 => 'Tazas'] as $value => $label): ?>
+                        <option value="<?= $value ?>" <?= $product['categoriaID'] == $value ? 'selected' : ''; ?>><?= $label ?></option>
+                    <?php endforeach; ?>
                 </select>
             </div>
             
@@ -39,8 +44,8 @@
             </div>
             
             <div class="coffee-product-form-group">
-                <label for="coffee-product-categoria-label">Categoría:</label>
-                <select name="activado" id="coffee-product-categoria-label" required>
+                <label for="coffee-product-activado-label">Estado:</label>
+                <select name="activado" id="coffee-product-activado-label" required>
                     <option value="1" <?= $product['activado'] == 1 ? 'selected' : ''; ?>>Activado</option>
                     <option value="0" <?= $product['activado'] == 0 ? 'selected' : ''; ?>>Desactivado</option>
                 </select>
