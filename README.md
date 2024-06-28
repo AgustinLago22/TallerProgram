@@ -11,7 +11,7 @@ nombre:admintest
 pass:1234
 
 
-##Actualizaciones hechas.
+## Actualizaciones hechas
 -Validacion de formulario de contacto
 -Validacion formulario de productos/ Agregar y Editar Productos
 -Validacion en formulario de compra.
